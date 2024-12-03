@@ -1,0 +1,385 @@
+
+
+:root {
+    --main-color: #b1a942;
+    --text-color: #dcebec;
+    --bg-color-01: #000000;
+    --bg-color-02: #313030bb;
+    --color-01: #dbd687;
+    --color-02: #55064a;
+    --color-03: #881879;
+}
+
+/* Estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+     
+body {
+    background-color: var(--bg-color-01);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+h2 {
+    color: var(--text-color);
+    font-size: 38px;
+    text-align: center;
+    margin-top: 190px;
+}
+
+h2 span {
+    color: var(--main-color);
+}
+
+/* Estilo cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: var(--color-03);
+    transform: scale(1.08);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 35px;
+}
+
+header .btn-contato button{
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--main-color);
+    color: var(--color-02);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover, form .btn-enviar input:hover {
+   box-shadow: 0px 0px 8px var(--color-01);
+   color:#881879
+}
+
+header .logo img {
+    cursor: default;
+}
+
+header .logo stan {
+    padding: 0 10px;
+    font-size: 30px;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: default;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do topo */
+
+section .top {
+    padding: 40px 4%;
+}
+
+section .top .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.top .txt-top h1 {
+    color: var(--text-color);
+    text-align: left;
+    justify-content: left;
+    line-height: 40px;
+    font-size: 35px;
+    margin:80px 80px 0;
+}
+
+.top .txt-top h1 span {
+    color: var(--color-03);
+}
+
+.top .txt-top p {
+    color: var(--text-color);
+    line-height: 10px;
+    text-align: justify;
+    justify-content: center;
+    margin: 25px 0;
+    }
+
+.top .img-top img {
+    position: relative;
+    animation: flutuar 1s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        bottom: 25px;
+    }
+}
+/*ESTILO DAS ESPECIALIDADES*/
+section .especialidades {
+    padding: 40px 4%;
+}
+
+.especialidades .especialidades-box {
+    color: var(--text-color);
+    padding: 100px;
+    margin: 40px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--color-03);
+}
+
+.especialidades .especialidades-box i {
+    color: var(--color-02);
+    font-size: 68px;
+    border-bottom: 80px;
+    align-items: center;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 20px;
+    font-style: oblique;
+    margin: 40px 0;
+}
+
+/*ESTILO DO SOBRE*/
+section .sobre {
+    padding: 80px 4%;
+    margin-top: 600px;
+}
+
+section .txt-sobre {
+    align-items: center;
+    margin-left: 60px;
+}
+
+.sobre .txt-sobre {
+    color: var(--text-color);
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre p {
+    font-size: 20px;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--bg-color-01);
+    color: var(--text-color);
+    font-size: 30px;
+    border: 100px;
+    cursor:pointer;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+.btn-social button:hover {
+    box-shadow: 0px 0px 8px var(--color-01);
+    color:#881879;
+    font-size: 200%;
+}
+
+/*ESTILO PROJETOS*/
+section .projetos {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px var(--color-02);
+}
+
+section .projetos .flex{
+    justify-content: space-around;
+}
+
+.img-proj {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    margin: 80px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.img-proj .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-03);
+}
+
+/*EFEITO DO FORMULÁRIO*/
+section .interface {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: var(--bg-color-02);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 500px;
+}
+
+form .btn-enviar {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+form .btn-enviar input[type=submit] {
+    width: 120px;
+    height: 60px;
+    background-color: var(--main-color);
+    color: var(--color-02);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/*ESTILO RODAPÉ*/
+footer {
+    padding: 20px 4%;
+    margin-top: 40px;
+    box-shadow: 0 0 30px 10px var(--main-color);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1062px) {
+    /*CLASSES GERAIS*/
+    .flex {
+        flex-direction: column;
+    }
+    .top .flex {
+        flex-direction: column-reverse;
+    }
+
+    section .top .flex {
+        padding: 40px;
+    }
+    /*CABEÇALHO*/
+    .menu, .btn-contato {
+        display: none;
+    }
+    /*TOPO*/
+    section .top {
+        padding: 20px 8%;
+    }
+    .top h1 {
+        font-size: 30px;
+    }
+    .top .img-top .img {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .top .txt-top h1, p {
+        color: var(--text-color);
+        text-align: justify;
+        justify-content: center;
+        line-height: 60px;
+        font-size: 15px;
+        margin:40px 120px 0;
+    }
+    section .especialidades {
+        padding: 20px 8%;
+    }
+    .especialidades .especialidades-box i {
+        border-bottom: 80px;
+    }
+    
+    .especialidades .especialidades-box h3 {
+        font-size: 20px;
+        font-style:oblique;
+        text-align: center;
+        margin: 40px 0;
+    }
+    .especialidades .especialidades-box p{
+        text-align: left;
+    }
+
+    .sobre .txt-sobre h2, p, button {
+        padding: 20px 8%;
+        text-align: left;
+    }
+}
+    
